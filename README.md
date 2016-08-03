@@ -10,7 +10,7 @@ Ignoring a package.java class
 Ignoring a package.java class
 ========================
 Creating mapping.txt
-file created. This file contains many {word: {[types], [methods | constructors (e.g., methods(C))]}} entries
+File created. This file contains many {word: {[types], [methods | constructors (e.g., methods(C))]}} entries
 ========================
 Additional Info: 
 Clusters of semantically related words:
@@ -21,10 +21,10 @@ Exiting with Code 0
 ```
 
 
-Want to help related to the CLI? 
+To see the CLI's supported commands, type 
 
 ```
 $ ./cue concepts -h
 ```
 
-**Note:** Please ignore -f CLI option.
+**Note:** For now, please ignore -f CLI option and the other commands, such as `# > ./cue typical` and # > ./cue represent.
