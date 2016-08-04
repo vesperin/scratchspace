@@ -4,17 +4,13 @@
 # *Prereqs*:
 # * big.txt file should be in the same directory as cuecli.jar 
  
-# 1. find the 5 most typical Java implementations of objects in file methods.txt
-# > ./cue typical -k 5 -f ../path/to/methods.txt -e
-
-# 2. find the most representative 'typical' Java implementation of objects in file methods.txt
-# > ./cue represent -f ../path/to/methods.txt
-
-# 3. find the 50 most typical concepts assigned in methods.txt
+# 1. find the 50 most typical concepts assigned in methods.txt
 # > ./cue concepts -k 50 -d corpus/
-# the output is a JSON file containing  many 
-# {word: {[types], [methods | constructors (e.g., methods(C))]}} entries. Where 
-# the first array contains the fully qualified names of types where a word occurs, and 
-# the second array contains the methods where a word occurs. 
+# the output consists of two JSON files (typestowords.txt, and wordtotypes.txt).
+# Each file contains many 
+# 1. {{fully.qualified.classname#methodname: [words ranked by tf-idf score]}} entries. 
+# The higher this score, the more relevant this word is to 
+# the fully.qualified.classname#methodname.
+# 2. {{word: [fully.qualified.classname#methodname ranked by tf-idf score]}} entries.
 
-java -cp ".:cuecli.jar:*" com.vesperin.cue.TypicalityCliRunner $*
+java -cp ".:cuecli.jar:*" com.vesperin.cue.BasicCli $*
