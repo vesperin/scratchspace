@@ -11,13 +11,29 @@ $ ./cue concepts -k 50 -o -d corpus/
 Exiting with Code 0
 ```
 
-Or if you want to create mappings between types and their labels, you can try this command:
+Or if you want to create mappings between fully.qualified.class-names (for simplicity, we will call them `types` hereafter) and their labels, you can try this command:
 
 ```
 $ ./cue concepts -k 50 -o -m -d corpus/
 ```
 
-The above command will displays all these mappings on your screen.
+The above command will displays all these mappings on your screen. 
+
+**Note**: labels are selected (for each array of types) based on BOTH substring matching between types AND whether these labels are found in the generated top k list of words. If they are not in the top k list, then they will not be selected. For example, let's assume the words `joint` and `socket` are not in the top 50 words in the corpus, but the word `ball` is. Then, when we run our concept tool, we will end up with the following entry:  
+
+```
+    {
+      "types": [
+        "net.smert.jreactphysics3d.constraint.BallAndSocketJoint",
+        "net.smert.jreactphysics3d.constraint.BallAndSocketJointInfo"
+      ],
+      "labels": [
+        "ball"
+      ]
+    },  
+```
+
+If you are interested in capturing more concepts, then you can increase the `-k` value. 
 
 To see the CLI's supported commands, execute the following command:
 
@@ -25,4 +41,4 @@ To see the CLI's supported commands, execute the following command:
 $ ./cue concepts -h
 ```
 
-**Note:** For now, please ignore -f CLI option and the other commands, such as `# > ./cue typical` and # > ./cue represent.
+**Note:** For now, please ignore -f and -s CLI options and the other commands, such as `# > ./cue typical` and # > ./cue represent. These options are currently being tested. 
