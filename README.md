@@ -33,6 +33,15 @@ The above command will displays all these mappings on your screen.
     },  
 ```
 
+If you are interested in using Kruskal clustering (MST based) algorithm instead of Kmeans, which uses the vector space model, then use the following option:
+
+```
+$ ./cue concepts -k 50 -o -m -mst -d corpus/
+```
+
+The Kruskal algorithm takes longer to converge than the Kmeans clustering algorithm. Try both and then see which one seems more suitable for graph relabeling.   
+ 
+
 If you are interested in capturing more concepts, then you can increase the `-k` value. 
 
 To see the CLI's supported commands, execute the following command:

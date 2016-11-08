@@ -2,45 +2,38 @@
   "mappings": [
     {
       "types": [
-        "com.jme3.util.TangentBinormalGenerator"
+        "com.jme3.shader.ShaderVariable",
+        "com.jme3.shader.Shader"
       ],
       "labels": [
-        "tangent",
-        "binormal"
+        "shader"
+      ],
+      "alternative": [
+        "shader"
       ]
     },
     {
       "types": [
-        "net.smert.jreactphysics3d.collision.broadphase.SweepAndPruneAlgorithm"
+        "net.smert.jreactphysics3d.collision.narrowphase.EPA.TriangleComparison",
+        "org.dyn4j.geometry.Triangle",
+        "com.jme3.math.Triangle"
       ],
       "labels": [
-        "sweep",
-        "prune"
+        "triangle"
+      ],
+      "alternative": [
+        "triangle"
       ]
     },
     {
       "types": [
-        "org.ode4j.ode.internal.joints.DxJointConstrainedBall"
+        "com.jme3.scene.debug.WireBox"
       ],
       "labels": [
-        "ball",
-        "joint"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.DxTrimeshHeightfield"
+        "wire"
       ],
-      "labels": [
-        "trimesh"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.input.controls.AnalogListener"
-      ],
-      "labels": [
-        "analog"
+      "alternative": [
+        "box"
       ]
     },
     {
@@ -49,56 +42,22 @@
       ],
       "labels": [
         "sphere"
+      ],
+      "alternative": [
+        "sphere"
       ]
     },
     {
       "types": [
-        "org.ode4j.ode.internal.Matrix",
-        "com.jme3.math.Matrix3f",
-        "org.ode4j.ode.DMatrix",
-        "com.jme3.math.Matrix4f",
-        "org.dyn4j.geometry.Matrix33",
-        "org.dyn4j.geometry.Matrix22",
-        "org.ode4j.math.DMatrix3",
-        "org.ode4j.math.DMatrixN",
-        "net.smert.jreactphysics3d.mathematics.Matrix2x2",
-        "net.smert.jreactphysics3d.mathematics.Matrix3x3"
+        "com.jme3.effect.shapes.EmitterPointShape"
       ],
       "labels": [
-        "matrix"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.decompose.Triangulator"
+        "emitter",
+        "shape"
       ],
-      "labels": [
-        "triangulator"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.joints.OdeJointsFactoryImpl"
-      ],
-      "labels": [
-        "joint"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.font.BitmapCharacterSet",
-        "com.jme3.font.BitmapCharacter"
-      ],
-      "labels": [
-        "bitmap"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.ui.Picture"
-      ],
-      "labels": [
-        "picture"
+      "alternative": [
+        "emitter",
+        "shape"
       ]
     },
     {
@@ -106,16 +65,11 @@
         "net.smert.jreactphysics3d.body.RigidBody"
       ],
       "labels": [
-        "rigid",
-        "body"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.dynamics.Torque"
+        "body",
+        "rigid"
       ],
-      "labels": [
-        "torque"
+      "alternative": [
+        "body"
       ]
     },
     {
@@ -123,146 +77,22 @@
         "org.dyn4j.dynamics.BodyFixture"
       ],
       "labels": [
-        "fixture",
+        "body",
+        "fixture"
+      ],
+      "alternative": [
         "body"
       ]
     },
     {
       "types": [
-        "com.jme3.math.CurveAndSurfaceMath",
-        "com.jme3.scene.shape.Surface"
+        "com.jme3.texture.TextureProcessor",
+        "com.jme3.material.MaterialProcessor"
       ],
-      "labels": [
-        "surface"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.util.mikktspace.MikktspaceTangentGenerator"
-      ],
-      "labels": [
-        "tangent"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.collision.narrowphase.MinkowskiPenetrationSolver",
-        "org.dyn4j.collision.narrowphase.Penetration"
-      ],
-      "labels": [
-        "penetration"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.DPistonJoint",
-        "org.dyn4j.dynamics.joint.FrictionJoint"
-      ],
-      "labels": [
-        "joint"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.gimpact.GimTrimeshTrimeshCol",
-        "org.ode4j.ode.internal.gimpact.GimTrimesh"
-      ],
-      "labels": [
-        "trimesh"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.DDestructible"
-      ],
-      "labels": [
-        "destructible"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.scene.shape.PQTorus",
-        "com.jme3.scene.shape.Torus"
-      ],
-      "labels": [
-        "torus"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.material.Material",
-        "com.jme3.material.MaterialDef",
-        "net.smert.jreactphysics3d.engine.Material",
-        "com.jme3.asset.MaterialKey",
-        "com.jme3.util.MaterialDebugAppState",
-        "com.jme3.material.MaterialProcessor",
-        "com.jme3.material.MaterialList"
-      ],
-      "labels": [
-        "material"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.scene.shape.Cylinder",
-        "org.ode4j.ode.DCylinder",
-        "org.ode4j.ode.internal.DxCylinder"
-      ],
-      "labels": [
-        "cylinder"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.joints.DxJointLimitMotor"
-      ],
-      "labels": [
-        "motor",
-        "joint"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.scene.debug.SkeletonInterBoneWire",
-        "com.jme3.animation.Skeleton"
-      ],
-      "labels": [
-        "skeleton"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.bounding.BoundingVolume",
-        "com.jme3.bounding.BoundingSphere"
-      ],
-      "labels": [
-        "bounding"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.math.Spline"
-      ],
-      "labels": [
-        "spline"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.DTransmissionJoint",
-        "org.ode4j.ode.internal.joints.DxJointTransmission"
-      ],
-      "labels": [
-        "transmission",
-        "joint"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.material.logic.SinglePassAndImageBasedLightingLogic"
-      ],
-      "labels": [
-        "lighting"
+      "labels": [],
+      "alternative": [
+        "material",
+        "texture"
       ]
     },
     {
@@ -271,133 +101,51 @@
         "org.ode4j.ode.internal.gimpact.GimGeometry",
         "com.jme3.scene.instancing.InstancedGeometry",
         "com.jme3.scene.GeometryGroupNode",
-        "org.dyn4j.geometry.Geometry",
-        "com.jme3.renderer.queue.GeometryList"
+        "com.jme3.renderer.queue.GeometryList",
+        "org.dyn4j.geometry.Geometry"
       ],
       "labels": [
+        "geometry"
+      ],
+      "alternative": [
         "geometry"
       ]
     },
     {
       "types": [
-        "com.jme3.app.ChaseCameraAppState",
-        "com.jme3.input.ChaseCamera"
+        "org.dyn4j.geometry.AbstractShape",
+        "com.jme3.scene.shape.AbstractBox"
       ],
-      "labels": [
-        "camera",
-        "chase"
+      "labels": [],
+      "alternative": [
+        "box",
+        "shape"
       ]
     },
     {
       "types": [
-        "com.jme3.environment.generation.IrradianceMapGenerator"
+        "com.jme3.environment.LightProbeFactory",
+        "com.jme3.light.LightProbe"
       ],
       "labels": [
-        "irradiance"
+        "light",
+        "probe"
+      ],
+      "alternative": [
+        "light",
+        "shader"
       ]
     },
     {
       "types": [
-        "org.dyn4j.geometry.Ellipse",
-        "org.dyn4j.geometry.HalfEllipse"
+        "com.jme3.light.PoiLightProbeLightFilter",
+        "com.jme3.light.DefaultLightFilter"
       ],
       "labels": [
-        "ellipse"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.bounding.Intersection"
+        "light"
       ],
-      "labels": [
-        "intersection"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.font.BitmapFont",
-        "com.jme3.font.BitmapText"
-      ],
-      "labels": [
-        "bitmap"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.effect.ParticlePointMesh",
-        "com.jme3.effect.ParticleMesh"
-      ],
-      "labels": [
-        "particle",
-        "mesh"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.Transformable"
-      ],
-      "labels": [
-        "transformable"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.app.state.ScreenshotAppState"
-      ],
-      "labels": [
-        "screenshot"
-      ]
-    },
-    {
-      "types": [
-        "net.smert.jreactphysics3d.engine.OverlappingPair"
-      ],
-      "labels": [
-        "overlapping"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.collision.continuous.TimeOfImpactDetector"
-      ],
-      "labels": [
-        "detector"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.dynamics.joint.PrismaticJoint"
-      ],
-      "labels": [
-        "joint",
-        "prismatic"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.Rotatable"
-      ],
-      "labels": [
-        "rotatable"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.math.Plane",
-        "org.ode4j.ode.DPlane",
-        "org.ode4j.ode.internal.DxPlane"
-      ],
-      "labels": [
-        "plane"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.animation.BoneTrack",
-        "com.jme3.animation.Bone"
-      ],
-      "labels": [
-        "bone"
+      "alternative": [
+        "light"
       ]
     },
     {
@@ -408,25 +156,453 @@
       "labels": [
         "ball",
         "joint"
+      ],
+      "alternative": [
+        "ball"
       ]
     },
     {
       "types": [
-        "org.ode4j.ode.internal.cpp4j.java.CppLongJump"
+        "com.jme3.texture.image.LastTextureState"
       ],
       "labels": [
-        "jump"
+        "texture"
+      ],
+      "alternative": [
+        "texture"
       ]
     },
     {
       "types": [
-        "org.dyn4j.geometry.Mass",
-        "org.ode4j.ode.DMass",
-        "org.ode4j.ode.DMassC",
-        "org.ode4j.ode.internal.DxMass"
+        "org.ode4j.ode.internal.gimpact.GimTrimeshCapsuleCollision"
       ],
       "labels": [
-        "mass"
+        "capsule",
+        "collision",
+        "trimesh"
+      ],
+      "alternative": [
+        "capsule",
+        "collision",
+        "trimesh"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.bounding.BoundingBox"
+      ],
+      "labels": [
+        "bounding"
+      ],
+      "alternative": [
+        "box"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.effect.shapes.EmitterBoxShape"
+      ],
+      "labels": [
+        "emitter",
+        "shape"
+      ],
+      "alternative": [
+        "box",
+        "emitter",
+        "shape"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.effect.shapes.EmitterMeshFaceShape",
+        "com.jme3.effect.shapes.EmitterMeshVertexShape"
+      ],
+      "labels": [
+        "emitter",
+        "mesh",
+        "shape"
+      ],
+      "alternative": [
+        "emitter",
+        "shape"
+      ]
+    },
+    {
+      "types": [
+        "org.dyn4j.dynamics.BodyIterator"
+      ],
+      "labels": [
+        "body"
+      ],
+      "alternative": [
+        "body"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.renderer.queue.GeometryComparator",
+        "com.jme3.collision.bih.TriangleAxisComparator"
+      ],
+      "labels": [],
+      "alternative": [
+        "geometry",
+        "triangle"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.light.AmbientLight",
+        "com.jme3.light.PointLight"
+      ],
+      "labels": [
+        "light"
+      ],
+      "alternative": [
+        "capsule",
+        "light",
+        "shape"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.environment.util.BoundingSphereDebug",
+        "com.jme3.bounding.BoundingSphere"
+      ],
+      "labels": [
+        "bounding",
+        "sphere"
+      ],
+      "alternative": [
+        "sphere"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.CollideTrimeshRay",
+        "org.ode4j.ode.internal.CollideTrimeshBox",
+        "org.ode4j.ode.internal.gimpact.GimTrimeshRayCollision",
+        "org.ode4j.ode.internal.CollideTrimeshTrimesh",
+        "org.ode4j.ode.internal.CollideTrimeshCCylinder"
+      ],
+      "labels": [
+        "collide",
+        "trimesh"
+      ],
+      "alternative": [
+        "box",
+        "collide",
+        "collision",
+        "cylinder",
+        "trimesh"
+      ]
+    },
+    {
+      "types": [
+        "net.smert.jreactphysics3d.collision.broadphase.SweepAndPruneAlgorithm"
+      ],
+      "labels": [
+        "prune",
+        "sweep"
+      ],
+      "alternative": [
+        "sweep"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.gimpact.GimTrimeshSphereCollision"
+      ],
+      "labels": [
+        "collision",
+        "sphere",
+        "trimesh"
+      ],
+      "alternative": [
+        "collision",
+        "sphere",
+        "trimesh"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.joints.DxJointConstrainedBall"
+      ],
+      "labels": [
+        "ball",
+        "joint"
+      ],
+      "alternative": [
+        "ball"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.DxTrimeshHeightfield"
+      ],
+      "labels": [
+        "trimesh"
+      ],
+      "alternative": [
+        "trimesh"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.scene.control.LightControl"
+      ],
+      "labels": [
+        "light"
+      ],
+      "alternative": [
+        "light"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.Matrix",
+        "com.jme3.math.Matrix3f",
+        "org.ode4j.ode.DMatrix",
+        "com.jme3.math.Matrix4f",
+        "org.dyn4j.geometry.Matrix33",
+        "org.dyn4j.geometry.Matrix22",
+        "org.ode4j.math.DMatrixN",
+        "org.ode4j.math.DMatrix3C"
+      ],
+      "labels": [
+        "matrix"
+      ],
+      "alternative": [
+        "matrix"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.effect.ParticleTriMesh",
+        "com.jme3.effect.Particle"
+      ],
+      "labels": [
+        "particle"
+      ],
+      "alternative": [
+        "particle"
+      ]
+    },
+    {
+      "types": [
+        "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector",
+        "org.dyn4j.collision.broadphase.BroadphaseDetector"
+      ],
+      "labels": [
+        "detector"
+      ],
+      "alternative": [
+        "detector"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.gimpact.GimTrimeshTrimeshCol",
+        "org.ode4j.ode.internal.gimpact.GimTrimesh"
+      ],
+      "labels": [
+        "trimesh"
+      ],
+      "alternative": [
+        "trimesh"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.material.Material",
+        "com.jme3.material.MaterialDef",
+        "net.smert.jreactphysics3d.engine.Material",
+        "com.jme3.asset.MaterialKey",
+        "com.jme3.util.MaterialDebugAppState",
+        "com.jme3.material.MaterialList"
+      ],
+      "labels": [
+        "material"
+      ],
+      "alternative": [
+        "material"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.scene.shape.Cylinder",
+        "org.ode4j.ode.DCylinder",
+        "org.ode4j.ode.internal.DxCylinder",
+        "net.smert.jreactphysics3d.collision.shapes.CylinderShape"
+      ],
+      "labels": [
+        "cylinder"
+      ],
+      "alternative": [
+        "cylinder",
+        "shape"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.environment.util.LightsDebugState"
+      ],
+      "labels": [
+        "light"
+      ],
+      "alternative": [
+        "light"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.shadow.SpotLightShadowFilter",
+        "com.jme3.shadow.PointLightShadowFilter",
+        "com.jme3.shadow.PointLightShadowRenderer"
+      ],
+      "labels": [
+        "light"
+      ],
+      "alternative": [
+        "light"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.scene.shape.StripBox"
+      ],
+      "labels": [
+        "strip"
+      ],
+      "alternative": [
+        "box"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.shader.Glsl100ShaderGenerator",
+        "com.jme3.shader.Glsl150ShaderGenerator",
+        "com.jme3.shader.ShaderGenerator"
+      ],
+      "labels": [
+        "shader"
+      ],
+      "alternative": [
+        "shader"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.CollideBoxPlane",
+        "org.ode4j.ode.internal.CollideBoxBox"
+      ],
+      "labels": [
+        "collide"
+      ],
+      "alternative": [
+        "box",
+        "collide",
+        "plane"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.shader.ShaderNodeDefinition",
+        "com.jme3.shader.ShaderNodeVariable",
+        "com.jme3.asset.ShaderNodeDefinitionKey"
+      ],
+      "labels": [
+        "shader"
+      ],
+      "alternative": [
+        "shader"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.effect.shapes.EmitterMeshConvexHullShape"
+      ],
+      "labels": [
+        "convex",
+        "emitter",
+        "hull",
+        "mesh",
+        "shape"
+      ],
+      "alternative": [
+        "emitter",
+        "shape"
+      ]
+    },
+    {
+      "types": [
+        "net.smert.jreactphysics3d.collision.narrowphase.EPA.TrianglesStore"
+      ],
+      "labels": [
+        "triangle"
+      ],
+      "alternative": [
+        "triangle"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.effect.influencers.EmptyParticleInfluencer",
+        "com.jme3.effect.influencers.ParticleInfluencer"
+      ],
+      "labels": [
+        "particle"
+      ],
+      "alternative": [
+        "particle"
+      ]
+    },
+    {
+      "types": [
+        "org.dyn4j.collision.continuous.TimeOfImpactDetector"
+      ],
+      "labels": [
+        "detector"
+      ],
+      "alternative": [
+        "detector"
+      ]
+    },
+    {
+      "types": [
+        "com.jme3.math.Plane",
+        "org.ode4j.ode.DPlane",
+        "org.ode4j.ode.internal.DxPlane",
+        "org.ode4j.ode.DPlane2DJoint"
+      ],
+      "labels": [
+        "plane"
+      ],
+      "alternative": [
+        "plane"
+      ]
+    },
+    {
+      "types": [
+        "org.ode4j.ode.internal.CollideSpaceGeom"
+      ],
+      "labels": [
+        "collide"
+      ],
+      "alternative": [
+        "collide"
+      ]
+    },
+    {
+      "types": [
+        "net.smert.jreactphysics3d.collision.shapes.ConvexMeshShape"
+      ],
+      "labels": [
+        "convex",
+        "mesh",
+        "shape"
+      ],
+      "alternative": [
+        "shape"
       ]
     },
     {
@@ -437,66 +613,66 @@
       "labels": [
         "ball",
         "joint"
+      ],
+      "alternative": [
+        "ball"
       ]
     },
     {
       "types": [
-        "com.jme3.material.logic.MultiPassLightingLogic",
-        "com.jme3.material.logic.StaticPassLightingLogic"
+        "com.jme3.texture.Texture",
+        "com.jme3.asset.TextureKey",
+        "com.jme3.texture.Texture2D"
       ],
       "labels": [
-        "lighting"
+        "texture"
+      ],
+      "alternative": [
+        "texture"
       ]
     },
     {
       "types": [
-        "org.dyn4j.collision.manifold.ClippingManifoldSolver"
+        "org.ode4j.ode.DHinge2Joint"
       ],
       "labels": [
-        "clipping"
+        "hinge",
+        "joint"
+      ],
+      "alternative": [
+        "hinge"
       ]
     },
     {
       "types": [
-        "org.ode4j.ode.internal.processmem.DxStepperProcessingCallContext"
+        "org.ode4j.ode.internal.CollideCylinderSphere",
+        "org.ode4j.ode.internal.CollideCylinderPlane",
+        "org.ode4j.ode.internal.CollideCylinderTrimesh"
       ],
       "labels": [
-        "stepper"
+        "collide",
+        "cylinder"
+      ],
+      "alternative": [
+        "collide",
+        "cylinder",
+        "plane",
+        "sphere",
+        "trimesh"
       ]
     },
     {
       "types": [
-        "org.ode4j.ode.DRotation",
-        "org.ode4j.ode.internal.Rotation"
+        "com.jme3.light.LightProbeBlendingStrategy",
+        "com.jme3.light.LightProbeBlendingProcessor"
       ],
       "labels": [
-        "rotation"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.decompose.EarClippingVertex",
-        "org.dyn4j.geometry.decompose.EarClipping"
+        "blending",
+        "light",
+        "probe"
       ],
-      "labels": [
-        "clipping"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.util.SkyFactory"
-      ],
-      "labels": []
-    },
-    {
-      "types": [
-        "com.jme3.texture.image.BitMaskImageCodec",
-        "com.jme3.texture.image.ImageCodec",
-        "com.jme3.texture.image.ByteOffsetImageCodec",
-        "com.jme3.texture.image.ByteAlignedImageCodec"
-      ],
-      "labels": [
-        "codec"
+      "alternative": [
+        "light"
       ]
     },
     {
@@ -506,6 +682,9 @@
         "org.dyn4j.dynamics.Body"
       ],
       "labels": [
+        "body"
+      ],
+      "alternative": [
         "body"
       ]
     },
@@ -518,67 +697,62 @@
       ],
       "labels": [
         "sweep"
+      ],
+      "alternative": [
+        "sweep"
       ]
     },
     {
       "types": [
-        "org.ode4j.ode.internal.gimpact.GimRadixSort"
+        "org.ode4j.ode.internal.joints.DxJointAMotor",
+        "org.ode4j.ode.internal.joints.DxJointDBall"
       ],
       "labels": [
-        "radix"
+        "joint"
+      ],
+      "alternative": [
+        "ball",
+        "motor"
       ]
     },
     {
       "types": [
-        "com.jme3.animation.SpatialTrack",
-        "com.jme3.scene.Spatial"
+        "org.dyn4j.collision.narrowphase.RaycastDetector",
+        "org.dyn4j.collision.narrowphase.SegmentDetector",
+        "org.dyn4j.collision.narrowphase.DistanceDetector"
       ],
       "labels": [
-        "spatial"
+        "detector"
+      ],
+      "alternative": [
+        "detector"
       ]
     },
     {
       "types": [
-        "com.jme3.renderer.opengl.GLTiming",
-        "com.jme3.renderer.opengl.GLTimingState"
+        "net.smert.jreactphysics3d.constraint.HingeJointInfo",
+        "org.ode4j.ode.DHingeJoint"
       ],
       "labels": [
-        "timing"
+        "hinge",
+        "joint"
+      ],
+      "alternative": [
+        "hinge"
       ]
     },
     {
       "types": [
-        "com.jme3.renderer.opengl.GLTracer"
+        "org.ode4j.ode.internal.CollideConvexTrimesh"
       ],
       "labels": [
-        "tracer"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.ragdoll.DRagdollBoneConfig",
-        "org.ode4j.ode.internal.ragdoll.DxRagdollBoneConfig"
+        "collide",
+        "convex",
+        "trimesh"
       ],
-      "labels": [
-        "bone",
-        "config"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.cinematic.events.CinematicEventListener",
-        "com.jme3.cinematic.Cinematic"
-      ],
-      "labels": [
-        "cinematic"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.math.Eigen3f"
-      ],
-      "labels": [
-        "eigen"
+      "alternative": [
+        "collide",
+        "trimesh"
       ]
     },
     {
@@ -589,40 +763,9 @@
       ],
       "labels": [
         "capsule"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.app.FlyCamAppState"
       ],
-      "labels": []
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.Polygon",
-        "org.dyn4j.geometry.decompose.MonotonePolygon"
-      ],
-      "labels": [
-        "polygon"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.collision.broadphase.BroadphaseDetector",
-        "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector",
-        "org.dyn4j.collision.narrowphase.NarrowphaseDetector",
-        "org.dyn4j.collision.narrowphase.CircleDetector"
-      ],
-      "labels": [
-        "detector"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.scene.debug.WireFrustum"
-      ],
-      "labels": [
-        "wire"
+      "alternative": [
+        "capsule"
       ]
     },
     {
@@ -631,391 +774,71 @@
       ],
       "labels": [
         "body"
+      ],
+      "alternative": [
+        "body"
       ]
     },
     {
       "types": [
-        "org.ode4j.ode.DLMotorJoint",
-        "org.ode4j.ode.DAMotorJoint"
+        "com.jme3.cinematic.MotionPath",
+        "com.jme3.cinematic.MotionPathListener",
+        "com.jme3.cinematic.events.MotionTrack"
       ],
       "labels": [
-        "motor",
-        "joint"
+        "motion"
+      ],
+      "alternative": [
+        "motion"
       ]
     },
     {
       "types": [
         "com.jme3.scene.shape.Sphere",
         "org.ode4j.ode.DSphere",
-        "org.ode4j.ode.internal.DxSphere"
+        "org.ode4j.ode.internal.DxSphere",
+        "net.smert.jreactphysics3d.collision.shapes.SphereShape"
       ],
       "labels": [
+        "sphere"
+      ],
+      "alternative": [
+        "shape",
         "sphere"
       ]
     },
     {
       "types": [
-        "org.dyn4j.dynamics.BodyIterator"
-      ],
-      "labels": [
-        "body"
-      ]
-    },
-    {
-      "types": [
-        "net.smert.jreactphysics3d.mathematics.Quaternion",
-        "org.ode4j.math.DQuaternion",
-        "org.ode4j.math.DQuaternionC",
-        "com.jme3.math.Quaternion"
-      ],
-      "labels": [
-        "quaternion"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.renderer.queue.GeometryComparator",
-        "com.jme3.renderer.queue.TransparentComparator"
-      ],
-      "labels": []
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.processmem.DxWorldProcessMemArena"
-      ],
-      "labels": [
-        "arena"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.collision.AbstractCollidable",
-        "com.jme3.collision.Collidable",
-        "org.dyn4j.collision.Collidable"
-      ],
-      "labels": [
-        "collidable"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.Circle"
-      ],
-      "labels": [
-        "circle"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.animation.AnimationUtils",
-        "com.jme3.animation.Animation",
-        "com.jme3.cinematic.events.AnimationTrack"
-      ],
-      "labels": [
-        "animation"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.scene.SceneGraphVisitorAdapter",
-        "com.jme3.scene.SceneGraphVisitor"
-      ],
-      "labels": [
-        "visitor",
-        "graph",
-        "scene"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.effect.influencers.NewtonianParticleInfluencer",
-        "com.jme3.effect.influencers.EmptyParticleInfluencer"
-      ],
-      "labels": [
-        "particle"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.AbstractStepper"
-      ],
-      "labels": [
-        "stepper"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.internal.gimpact.GimTriCollision",
-        "org.ode4j.ode.internal.CollisionLibccdCylinderStacking",
-        "org.ode4j.ode.internal.DxCollisionUtil",
-        "org.dyn4j.dynamics.CollisionAdapter",
-        "org.ode4j.ode.internal.gimpact.GimTrimeshCapsuleCollision",
-        "org.ode4j.ode.internal.gimpact.GimTrimeshRayCollision",
-        "com.jme3.scene.CollisionData",
-        "org.ode4j.ode.internal.gimpact.GimTrimeshSphereCollision",
-        "org.ode4j.ode.internal.CollisionLibccd",
-        "org.dyn4j.dynamics.CollisionListener",
-        "net.smert.jreactphysics3d.engine.CollisionWorld",
-        "net.smert.jreactphysics3d.collision.CollisionDetection",
-        "com.jme3.collision.CollisionResults",
-        "org.ode4j.ode.internal.DxGimpactCollision",
-        "org.dyn4j.collision.Collisions",
-        "com.jme3.collision.CollisionResult",
-        "net.smert.jreactphysics3d.body.CollisionBody",
-        "net.smert.jreactphysics3d.collision.shapes.CollisionShape"
-      ],
-      "labels": [
-        "collision",
-        "trimesh"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.input.event.MouseMotionEvent",
-        "com.jme3.cinematic.MotionPathListener",
-        "com.jme3.cinematic.events.MotionEvent",
-        "com.jme3.cinematic.events.MotionTrack",
-        "com.jme3.cinematic.MotionPath",
         "com.jme3.collision.MotionAllowedListener"
       ],
       "labels": [
+        "motion"
+      ],
+      "alternative": [
         "motion"
       ]
     },
     {
       "types": [
-        "net.smert.jreactphysics3d.collision.broadphase.BroadPhaseAlgorithm",
-        "net.smert.jreactphysics3d.collision.broadphase.NoBroadPhaseAlgorithm",
-        "net.smert.jreactphysics3d.collision.BroadPhasePair",
-        "net.smert.jreactphysics3d.collision.narrowphase.NarrowPhaseAlgorithm"
-      ],
-      "labels": [
-        "phase"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.shader.ShaderVariable",
-        "com.jme3.shader.ShaderNode",
-        "com.jme3.shader.ShaderUtils",
-        "com.jme3.shader.ShaderNodeVariable",
-        "com.jme3.material.ShaderGenerationInfo",
-        "com.jme3.asset.ShaderNodeDefinitionKey",
-        "com.jme3.shader.Glsl150ShaderGenerator",
-        "com.jme3.shader.ShaderGenerator",
-        "com.jme3.shader.Glsl100ShaderGenerator",
-        "com.jme3.shader.ShaderNodeDefinition",
-        "com.jme3.shader.Shader"
-      ],
-      "labels": [
-        "shader"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.renderer.opengl.TextureUtil",
-        "com.jme3.texture.TextureProcessor",
-        "com.jme3.texture.TextureArray",
-        "com.jme3.texture.TextureCubeMap",
-        "com.jme3.texture.image.LastTextureState",
-        "com.jme3.texture.Texture3D",
-        "com.jme3.material.MatParamTexture",
-        "com.jme3.texture.Texture2D",
-        "com.jme3.environment.util.CubeMapWrapper",
-        "com.jme3.texture.Texture",
-        "com.jme3.asset.TextureKey"
-      ],
-      "labels": [
-        "texture",
-        "cube"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.effect.shapes.EmitterShape",
-        "com.jme3.effect.shapes.EmitterPointShape",
-        "com.jme3.effect.shapes.EmitterSphereShape",
-        "net.smert.jreactphysics3d.collision.shapes.ConeShape",
-        "net.smert.jreactphysics3d.collision.shapes.CapsuleShape",
-        "org.dyn4j.geometry.AbstractShape",
-        "com.jme3.effect.ParticleEmitter",
-        "org.dyn4j.geometry.hull.LinkedVertexHull",
-        "com.jme3.effect.shapes.EmitterMeshVertexShape",
-        "com.jme3.effect.shapes.EmitterMeshFaceShape",
-        "org.dyn4j.geometry.hull.HullGenerator",
-        "net.smert.jreactphysics3d.collision.shapes.CylinderShape",
-        "com.jme3.effect.shapes.EmitterMeshConvexHullShape",
-        "net.smert.jreactphysics3d.collision.shapes.ConvexMeshShape",
-        "org.dyn4j.geometry.Shape",
-        "net.smert.jreactphysics3d.collision.shapes.SphereShape"
-      ],
-      "labels": [
-        "shape",
-        "emitter",
-        "mesh",
-        "hull",
-        "sphere",
-        "convex"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.collision.bih.BIHTriangle",
-        "net.smert.jreactphysics3d.collision.narrowphase.EPA.TriangleComparison",
-        "com.jme3.math.AbstractTriangle",
-        "com.jme3.collision.bih.TriangleAxisComparator",
-        "net.smert.jreactphysics3d.collision.narrowphase.EPA.TriangleEPA",
-        "org.dyn4j.geometry.Triangle",
-        "com.jme3.math.Triangle",
-        "net.smert.jreactphysics3d.collision.narrowphase.EPA.TrianglesStore"
-      ],
-      "labels": [
-        "triangle"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.BinarySearchTreeSearchCriteria",
-        "org.dyn4j.geometry.decompose.ClosestEdgeToVertexSearchCriteria"
-      ],
-      "labels": [
-        "criteria"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.DDoubleHingeJoint",
-        "org.ode4j.ode.internal.joints.DxJointHinge2",
-        "net.smert.jreactphysics3d.constraint.HingeJoint",
-        "org.ode4j.ode.internal.joints.DxJointDHinge",
-        "org.ode4j.ode.internal.joints.DxJointHinge",
-        "org.ode4j.ode.DHingeJoint",
-        "org.ode4j.ode.DHinge2Joint",
-        "net.smert.jreactphysics3d.constraint.HingeJointInfo"
-      ],
-      "labels": [
-        "hinge",
-        "joint"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.decompose.Decomposer"
-      ],
-      "labels": [
-        "decomposer"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.geometry.WoundIterator",
-        "org.dyn4j.geometry.Wound"
-      ],
-      "labels": [
-        "wound"
-      ]
-    },
-    {
-      "types": [
-        "com.jme3.light.DirectionalLight",
-        "com.jme3.light.LightList",
-        "com.jme3.light.Light",
-        "com.jme3.shadow.SpotLightShadowRenderer",
-        "com.jme3.light.SpotLight",
-        "com.jme3.shadow.DirectionalLightShadowFilter",
-        "com.jme3.scene.LightNode",
-        "com.jme3.light.LightProbe",
-        "com.jme3.light.PointLight",
-        "com.jme3.environment.LightProbeFactory",
-        "com.jme3.light.LightFilter",
-        "com.jme3.light.DefaultLightFilter",
-        "com.jme3.light.PoiLightProbeLightFilter",
-        "com.jme3.shadow.PointLightShadowFilter",
-        "com.jme3.light.LightProbeBlendingProcessor",
-        "com.jme3.light.BasicProbeBlendingStrategy",
-        "com.jme3.light.AmbientLight",
-        "com.jme3.shadow.DirectionalLightShadowRenderer",
-        "com.jme3.shadow.PointLightShadowRenderer",
-        "com.jme3.scene.control.LightControl",
-        "com.jme3.environment.util.LightsDebugState",
-        "com.jme3.shadow.SpotLightShadowFilter",
-        "com.jme3.light.LightProbeBlendingStrategy"
-      ],
-      "labels": [
-        "light",
-        "probe",
-        "directional",
-        "blending",
-        "strategy"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.collision.narrowphase.Raycast",
-        "org.dyn4j.dynamics.RaycastListener",
-        "org.dyn4j.dynamics.RaycastAdapter",
-        "org.dyn4j.dynamics.RaycastBroadphaseFilter",
-        "org.dyn4j.dynamics.RaycastResult",
-        "org.dyn4j.collision.narrowphase.RaycastDetector"
-      ],
-      "labels": [
-        "raycast"
-      ]
-    },
-    {
-      "types": [
-        "org.ode4j.ode.DBox",
-        "com.jme3.scene.debug.WireBox",
-        "org.ode4j.ode.internal.CollideCylinderBox",
-        "org.ode4j.ode.internal.CollideTrimeshSphere",
-        "com.jme3.scene.shape.AbstractBox",
-        "org.ode4j.ode.internal.CollideBoxBox",
-        "net.smert.jreactphysics3d.collision.shapes.BoxShape",
-        "org.ode4j.ode.internal.CollideTrimeshPlane",
-        "org.ode4j.ode.internal.DxBox",
-        "org.ode4j.ode.internal.CollideTrimeshBoxOld",
-        "org.ode4j.ode.internal.CollideTrimeshBox",
-        "org.ode4j.ode.internal.CollideCylinderPlane",
-        "com.jme3.bounding.BoundingBox",
-        "com.jme3.effect.shapes.EmitterBoxShape",
-        "org.ode4j.ode.internal.CollideTrimeshTrimesh",
-        "org.ode4j.ode.internal.CollideTrimeshCCylinder",
-        "org.ode4j.ode.internal.CollideTrimeshRay",
-        "org.ode4j.ode.internal.CollideCylinderTrimesh",
-        "com.jme3.scene.shape.StripBox",
-        "org.ode4j.ode.internal.CollideBoxPlane",
-        "org.ode4j.ode.internal.CollideSpaceGeom",
-        "org.ode4j.ode.internal.CollideCylinderSphere",
-        "org.ode4j.ode.internal.CollideConvexTrimesh",
         "net.smert.jreactphysics3d.collision.broadphase.BoxAABB"
       ],
-      "labels": [
-        "collide",
-        "trimesh",
-        "cylinder",
-        "plane",
-        "shape",
-        "sphere"
+      "labels": [],
+      "alternative": [
+        "box"
       ]
     },
     {
       "types": [
-        "org.dyn4j.dynamics.contact.SequentialImpulses",
-        "net.smert.jreactphysics3d.engine.Impulse"
+        "net.smert.jreactphysics3d.collision.shapes.CollisionShape",
+        "net.smert.jreactphysics3d.body.CollisionBody"
       ],
       "labels": [
-        "impulse"
-      ]
-    },
-    {
-      "types": [
-        "org.dyn4j.dynamics.DetectBroadphaseFilter",
-        "org.dyn4j.dynamics.DetectListener",
-        "org.dyn4j.dynamics.DetectResult",
-        "org.dyn4j.dynamics.DetectAdapter"
+        "collision"
       ],
-      "labels": [
-        "detect"
+      "alternative": [
+        "body",
+        "collision",
+        "shape"
       ]
     }
   ]
